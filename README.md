@@ -112,5 +112,5 @@ vercel env add AUTH_SECRET production   # e.g. `openssl rand -base64 32`
 vercel --prod
 ```
 
-Pushes to `main` on GitHub (`anstariq/badr-medical-ai-support`, private)
+Pushes to `main` on GitHub (`anstariq/badr-medical-ai-support`, public)
 deploy to production automatically through Vercel's GitHub integration.
