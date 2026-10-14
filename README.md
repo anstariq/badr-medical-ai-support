@@ -71,10 +71,8 @@ button is hidden (`.vapi-btn { display: none }`).
 
 `PUBLIC_KEY` and `ASSISTANT_ID` are at the top of `app.js`.
 
-> **Placeholder assistant:** `ASSISTANT_ID` still points to the Cadence agent
-> (`add0f8a4…`, "Cadence Academy Agent A"). Change it to the Badr assistant's
-> ID once that assistant exists in Vapi. The public key is account-level and
-> stays the same.
+The assistant is the Badr agent (`4e3335f7…`). The public key is
+account-level and shared with the Cadence demo.
 
 ## Access gate
 

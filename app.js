@@ -2,7 +2,7 @@
 // PUBLIC_KEY is the account-level Vapi public key (Vapi dashboard → Account → API Keys).
 // ASSISTANT_ID is per-assistant (Vapi dashboard → Assistants → select → copy ID).
 var PUBLIC_KEY = "07a2396d-9738-4838-af99-f6a18d946f0b";
-var ASSISTANT_ID = "add0f8a4-43df-4ad5-b56c-ce207dcfa925";
+var ASSISTANT_ID = "4e3335f7-bc8b-4634-97f2-e47fa9705c24";
 // ────────────────────────────────────────────────────────────────────────────
 
 var configured = ASSISTANT_ID.indexOf("REPLACE_WITH") !== 0;
