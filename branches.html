@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Branches — Badr Medical Group AI Support</title>
+    <meta
+      name="description"
+      content="Badr Medical Group branch locations, with an AI voice assistant."
+    />
+    <meta name="robots" content="noindex, nofollow" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📞</text></svg>"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- UTILITY BAR -->
+    <div class="topbar">
+      <div class="topbar__inner">
+        <div class="topbar__group">
+          <span class="topbar__item topbar__greet">Welcome to Badr Medical Group</span>
+          <a class="topbar__item" href="#"><svg class="icon"><use href="icons.svg#i-phone" /></svg><span dir="ltr">+96650 066 8123</span></a>
+          <a class="topbar__item topbar__email" href="#"><svg class="icon"><use href="icons.svg#i-mail" /></svg>info@badrhealth.com</a>
+        </div>
+        <div class="topbar__group">
+          <a class="topbar__item topbar__branch" href="#"><svg class="icon"><use href="icons.svg#i-pin" /></svg>Nearest Branch<svg class="icon"><use href="icons.svg#i-chev" /></svg></a>
+          <div class="topbar__social">
+            <a href="#" aria-label="Facebook"><svg class="icon"><use href="icons.svg#i-fb" /></svg></a>
+            <a href="#" aria-label="Instagram"><svg class="icon"><use href="icons.svg#i-ig" /></svg></a>
+            <a href="#" aria-label="LinkedIn"><svg class="icon"><use href="icons.svg#i-in" /></svg></a>
+            <a href="#" aria-label="YouTube"><svg class="icon"><use href="icons.svg#i-yt" /></svg></a>
+            <a href="#" aria-label="Twitter"><svg class="icon"><use href="icons.svg#i-x" /></svg></a>
+          </div>
+          <img class="topbar__vision" src="img/vision2030.png" alt="Saudi Vision 2030" />
+        </div>
+      </div>
+    </div>
+
+    <!-- HEADER -->
+    <header class="header">
+      <div class="header__inner">
+        <a class="header__logo" href="/">
+          <img src="badr-logo.png" alt="Badr Medical Group" />
+        </a>
+        <nav class="nav" aria-label="Main">
+          <a class="nav__link" href="/">Home</a>
+          <a class="nav__link" href="/about">About</a>
+          <a class="nav__link" href="/services">Services</a>
+          <a class="nav__link" href="/doctors">Doctors</a>
+          <a class="nav__link nav__link--active" href="/branches">Branches</a>
+        </nav>
+        <a class="header__bric" href="#"><img src="img/bric-logo.png" alt="BRIC - Badr Remote Industrial Clinic" /></a>
+        <div class="header__actions">
+          <a class="pill pill--solid" href="#">Contact</a>
+          <a class="pill pill--outline header__lang" href="#">English</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- BANNER -->
+    <section class="page-banner page-banner--dark" id="branch-banner" style="background-image: url('img/dammam-exterior.jpg')">
+      <div class="page-banner__inner">
+        <div class="page-banner__card">
+          <span class="page-banner__eyebrow" id="banner-eyebrow">Dammam, Al Rabie District</span>
+          <h1 id="banner-title">Badr Al-Rabie Medical Center</h1>
+          <p class="page-banner__sub">Excellence in healthcare services with state-of-the-art facilities and compassionate care</p>
+          <div class="hero__actions">
+            <button id="call-btn" class="btn btn--teal">
+              <span class="btn__icon">📞</span>
+              <span id="call-btn-label">Click to Call</span>
+            </button>
+          </div>
+          <div class="status-pill">
+            <span class="status-pill__dot" id="status-dot"></span>
+            <span id="status-label">Ready to connect</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--page">
+      <div class="shell">
+        <div class="tabs"><div class="tabs__list" role="tablist" aria-label="Branches" id="branch-tabs"></div></div>
+        <div class="branch">
+          <article class="panel branch__card">
+            <img id="b-img" src="img/dammam-exterior.jpg" alt="" />
+            <h2 id="b-name"></h2>
+            <ul class="branch__rows">
+              <li><svg class="icon"><use href="icons.svg#i-pin" /></svg><span id="b-addr"></span></li>
+              <li><svg class="icon"><use href="icons.svg#i-phone" /></svg><a id="b-phone" href="#"></a></li>
+              <li><svg class="icon"><use href="icons.svg#i-chat" /></svg><a id="b-wa" href="#" target="_blank" rel="noopener"></a></li>
+              <li><svg class="icon"><use href="icons.svg#i-clock" /></svg><span id="b-hours"></span></li>
+            </ul>
+            <a class="btn btn--teal" id="b-dir" href="#" target="_blank" rel="noopener"><svg class="icon"><use href="icons.svg#i-nav" /></svg>Get Directions</a>
+          </article>
+          <iframe class="map" id="b-map" title="Branch map" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <div class="section-head" style="margin: 64px auto 28px">
+          <h2 class="subhead" style="margin-bottom: 4px">Photo Gallery</h2>
+          <p class="page-lead" id="b-gallery-lead"></p>
+        </div>
+        <div class="gallery" id="b-gallery"></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="shell">
+        <div class="section-head">
+          <h2 class="section-title">Our Head Office Location</h2>
+          <div class="title-bar"></div>
+          <p class="section-intro">Visit our main location in Dammam. Our Badr Medical Group head office is conveniently located on King Saud Street.</p>
+        </div>
+        <div class="office">
+          <iframe class="map" title="Head office map" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=Badr+Al-Rabie+Medical+Center,+King+Saud+St,+Dammam&amp;z=15&amp;output=embed"></iframe>
+          <div class="panel">
+            <h3><svg class="icon"><use href="icons.svg#i-pin" /></svg>Badr Medical Group</h3>
+            <dl>
+              <div><dt>Address:</dt><dd>King Saud St, Ar Rabi, Dammam 31488, Saudi Arabia</dd></div>
+              <div><dt>Phone:</dt><dd>(+966) 13-832-6000</dd></div>
+            </dl>
+            <a class="btn btn--teal" href="https://maps.app.goo.gl/yz9BSAhXnRDXEfn4A" target="_blank" rel="noopener"><svg class="icon"><use href="icons.svg#i-nav" /></svg>Get Directions</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer__inner">
+        <div>
+          <a class="footer__logo" href="#"><img src="badr-logo.png" alt="Badr Medical Group" /></a>
+          <p class="footer__lead">
+            Providing exceptional healthcare services with compassion and
+            expertise across our branches.
+          </p>
+          <h4>Connect With Us</h4>
+          <div class="footer__social">
+            <a href="#" aria-label="Facebook"><svg class="icon"><use href="icons.svg#i-fb" /></svg></a>
+            <a href="#" aria-label="Instagram"><svg class="icon"><use href="icons.svg#i-ig" /></svg></a>
+            <a href="#" aria-label="LinkedIn"><svg class="icon"><use href="icons.svg#i-in" /></svg></a>
+            <a href="#" aria-label="YouTube"><svg class="icon"><use href="icons.svg#i-yt" /></svg></a>
+            <a href="#" aria-label="Twitter"><svg class="icon"><use href="icons.svg#i-x" /></svg></a>
+          </div>
+        </div>
+        <div class="footer__contact">
+          <h3>Contact Us</h3>
+          <p class="footer__ar" lang="ar" dir="rtl">شركة بدر الطبية<br />الدمام، الربيع، الثاني،32241</p>
+          <div class="footer__rows">
+            <div class="footer__row"><span class="icon-dot"><svg class="icon"><use href="icons.svg#i-mail" /></svg></span><div><small>Email</small><span>info@badrhealth.com</span></div></div>
+            <div class="footer__row"><span class="icon-dot"><svg class="icon"><use href="icons.svg#i-phone" /></svg></span><div><small>Toll Free</small><span>920007139</span></div></div>
+          </div>
+          <p class="footer__note">
+            Your trusted healthcare partner in Saudi Arabia since 1997,
+            providing quality medical services with compassion and expertise.
+          </p>
+        </div>
+      </div>
+      <div class="footer__bar">© 2026 Badr Medical Group | All Rights Reserved</div>
+    </footer>
+
+    <script src="branches.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

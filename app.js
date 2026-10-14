@@ -12,6 +12,8 @@ var btnLabel = document.getElementById("call-btn-label");
 var btnIcon = callBtn.querySelector(".btn__icon");
 var statusDot = document.getElementById("status-dot");
 var statusLbl = document.getElementById("status-label");
+// Each page styles its button to suit its banner; restore that look when idle.
+var idleClass = callBtn.className;
 
 var calling = false;
 var vapi = null;
@@ -24,7 +26,7 @@ function setStatus(modifier, label) {
 
 function setIdle() {
   calling = false;
-  callBtn.className = "btn btn--primary";
+  callBtn.className = idleClass;
   callBtn.disabled = false;
   btnLabel.textContent = "Click to Call";
   btnIcon.textContent = "📞";

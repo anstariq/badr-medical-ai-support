@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Doctors — Badr Medical Group AI Support</title>
+    <meta
+      name="description"
+      content="Find a doctor at Badr Medical Group, with an AI voice assistant."
+    />
+    <meta name="robots" content="noindex, nofollow" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📞</text></svg>"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- UTILITY BAR -->
+    <div class="topbar">
+      <div class="topbar__inner">
+        <div class="topbar__group">
+          <span class="topbar__item topbar__greet">Welcome to Badr Medical Group</span>
+          <a class="topbar__item" href="#"><svg class="icon"><use href="icons.svg#i-phone" /></svg><span dir="ltr">+96650 066 8123</span></a>
+          <a class="topbar__item topbar__email" href="#"><svg class="icon"><use href="icons.svg#i-mail" /></svg>info@badrhealth.com</a>
+        </div>
+        <div class="topbar__group">
+          <a class="topbar__item topbar__branch" href="#"><svg class="icon"><use href="icons.svg#i-pin" /></svg>Nearest Branch<svg class="icon"><use href="icons.svg#i-chev" /></svg></a>
+          <div class="topbar__social">
+            <a href="#" aria-label="Facebook"><svg class="icon"><use href="icons.svg#i-fb" /></svg></a>
+            <a href="#" aria-label="Instagram"><svg class="icon"><use href="icons.svg#i-ig" /></svg></a>
+            <a href="#" aria-label="LinkedIn"><svg class="icon"><use href="icons.svg#i-in" /></svg></a>
+            <a href="#" aria-label="YouTube"><svg class="icon"><use href="icons.svg#i-yt" /></svg></a>
+            <a href="#" aria-label="Twitter"><svg class="icon"><use href="icons.svg#i-x" /></svg></a>
+          </div>
+          <img class="topbar__vision" src="img/vision2030.png" alt="Saudi Vision 2030" />
+        </div>
+      </div>
+    </div>
+
+    <!-- HEADER -->
+    <header class="header">
+      <div class="header__inner">
+        <a class="header__logo" href="/">
+          <img src="badr-logo.png" alt="Badr Medical Group" />
+        </a>
+        <nav class="nav" aria-label="Main">
+          <a class="nav__link" href="/">Home</a>
+          <a class="nav__link" href="/about">About</a>
+          <a class="nav__link" href="/services">Services</a>
+          <a class="nav__link nav__link--active" href="/doctors">Doctors</a>
+          <a class="nav__link" href="/branches">Branches</a>
+        </nav>
+        <a class="header__bric" href="#"><img src="img/bric-logo.png" alt="BRIC - Badr Remote Industrial Clinic" /></a>
+        <div class="header__actions">
+          <a class="pill pill--solid" href="#">Contact</a>
+          <a class="pill pill--outline header__lang" href="#">English</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- BANNER -->
+    <section class="page-banner" style="background-image: url('img/doctors-banner.jpg')">
+      <div class="page-banner__inner">
+        <div class="page-banner__card">
+          <span class="page-banner__eyebrow">Find a Doctor</span>
+          <h1>Our Doctors</h1>
+          <p class="page-banner__sub">Looking for the right specialist or their timings? Ask our AI assistant, or browse the directory below.</p>
+          <div class="hero__actions">
+            <button id="call-btn" class="btn btn--teal">
+              <span class="btn__icon">📞</span>
+              <span id="call-btn-label">Click to Call</span>
+            </button>
+          </div>
+          <div class="status-pill status-pill--light">
+            <span class="status-pill__dot" id="status-dot"></span>
+            <span id="status-label">Ready to connect</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--page">
+      <div class="shell">
+        <div class="section-head">
+          <h2 class="section-title">Our Doctors</h2>
+          <div class="title-bar"></div>
+          <p class="section-intro">Meet our team of experienced healthcare professionals providing exceptional care across all our branches</p>
+        </div>
+
+        <div class="doc-filters">
+          <label class="field"><svg class="icon"><use href="icons.svg#i-search" /></svg><input id="doc-search" type="search" placeholder="Search doctors by name..." aria-label="Search doctors by name" /></label>
+          <label class="field"><select id="doc-branch" aria-label="Filter by branch"><option value="">All Branches</option><option>Dammam</option><option>Jubail</option><option>Khobar</option><option>Qatif</option></select></label>
+          <label class="field"><select id="doc-dept" aria-label="Filter by department"><option value="">All Departments</option></select></label>
+        </div>
+        <p class="doc-count" id="doc-count" aria-live="polite"></p>
+        <div class="doc-grid" id="doc-grid"></div>
+        <p class="doc-empty" id="doc-empty" hidden>No doctors match those filters.</p>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer__inner">
+        <div>
+          <a class="footer__logo" href="#"><img src="badr-logo.png" alt="Badr Medical Group" /></a>
+          <p class="footer__lead">
+            Providing exceptional healthcare services with compassion and
+            expertise across our branches.
+          </p>
+          <h4>Connect With Us</h4>
+          <div class="footer__social">
+            <a href="#" aria-label="Facebook"><svg class="icon"><use href="icons.svg#i-fb" /></svg></a>
+            <a href="#" aria-label="Instagram"><svg class="icon"><use href="icons.svg#i-ig" /></svg></a>
+            <a href="#" aria-label="LinkedIn"><svg class="icon"><use href="icons.svg#i-in" /></svg></a>
+            <a href="#" aria-label="YouTube"><svg class="icon"><use href="icons.svg#i-yt" /></svg></a>
+            <a href="#" aria-label="Twitter"><svg class="icon"><use href="icons.svg#i-x" /></svg></a>
+          </div>
+        </div>
+        <div class="footer__contact">
+          <h3>Contact Us</h3>
+          <p class="footer__ar" lang="ar" dir="rtl">شركة بدر الطبية<br />الدمام، الربيع، الثاني،32241</p>
+          <div class="footer__rows">
+            <div class="footer__row"><span class="icon-dot"><svg class="icon"><use href="icons.svg#i-mail" /></svg></span><div><small>Email</small><span>info@badrhealth.com</span></div></div>
+            <div class="footer__row"><span class="icon-dot"><svg class="icon"><use href="icons.svg#i-phone" /></svg></span><div><small>Toll Free</small><span>920007139</span></div></div>
+          </div>
+          <p class="footer__note">
+            Your trusted healthcare partner in Saudi Arabia since 1997,
+            providing quality medical services with compassion and expertise.
+          </p>
+        </div>
+      </div>
+      <div class="footer__bar">© 2026 Badr Medical Group | All Rights Reserved</div>
+    </footer>
+
+    <script src="doctors-data.js"></script>
+    <script src="doctors.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

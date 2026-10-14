@@ -23,7 +23,8 @@ computed styles.
 
 Assets taken from the live site are served locally, not hot-linked:
 `badr-logo.png`, `hero.jpg` (their `homebanner2`), and the files in `img/`
-(BRIC logo, Vision 2030 mark, branch exterior photos). About 650 KB in total.
+(BRIC logo, Vision 2030 mark, branch photos, doctor portraits). About 5 MB in
+total.
 
 ### Page sections
 
@@ -37,7 +38,30 @@ area on the left, so the headline, the **Click to Call** button and the status
 pill sit directly on it, with no scrim. Below 860px the doctor photo slides
 under the text, so a teal wash covers it there.
 
-Every link is inert (`href="#"`). The call button is the only working control.
+### Subpages
+
+`about.html`, `services.html`, `doctors.html` and `branches.html` copy the
+matching pages of badrhealth.com. Vercel's `cleanUrls` serves them at `/about`,
+`/services`, `/doctors` and `/branches`. Each one opens with a banner holding its
+own **Click to Call** button, wired to the same assistant through `app.js`.
+
+- **About:** the story, vision/mission/values and achievements. One garbled
+  sentence in the live site's "Commitment to Quality" paragraph has been tidied.
+- **Services:** the nine medical exam cards, the department grid with a
+  working branch filter, and the pharmacy section.
+- **Doctors:** all 63 doctors, from `doctors-data.js`, rendered by
+  `doctors.js`, with search and branch/department filters. The live site's
+  queue tokens are left out because they come from Badr's live systems. Seven
+  portraits are broken on the live site itself, so those doctors show initials.
+- **Branches:** tabs for Dammam, Qatif, Jubail and Khobar, rendered by
+  `branches.js`, with a Google Maps embed and photo gallery for each.
+  `/branches#jubail` opens a specific tab.
+
+Icons are shared from `icons.svg`. The header and footer are copied into each
+page, so a change to them has to be made in all five files.
+
+Navigation works between the five pages. Other links (social, Contact,
+English) are inert.
 
 ## How the voice agent works
 
