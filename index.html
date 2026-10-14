@@ -1,0 +1,317 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Badr Medical Group AI Support</title>
+    <meta
+      name="description"
+      content="Connect with Badr Medical Group's AI-powered voice assistant, available 24/7."
+    />
+    <meta name="robots" content="noindex, nofollow" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📞</text></svg>"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Icon sprite (Lucide outlines) -->
+    <svg width="0" height="0" style="position: absolute" aria-hidden="true">
+      <symbol id="i-phone" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></symbol>
+      <symbol id="i-mail" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></symbol>
+      <symbol id="i-pin" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></symbol>
+      <symbol id="i-chev" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></symbol>
+      <symbol id="i-steth" viewBox="0 0 24 24"><path d="M11 2v2M5 2v2M5 3H4a2 2 0 0 0-2 2v4a6 6 0 0 0 12 0V5a2 2 0 0 0-2-2h-1"/><path d="M8 15a6 6 0 0 0 12 0v-3"/><circle cx="20" cy="10" r="2"/></symbol>
+      <symbol id="i-users" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></symbol>
+      <symbol id="i-award" viewBox="0 0 24 24"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></symbol>
+      <symbol id="i-heart" viewBox="0 0 24 24"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></symbol>
+      <symbol id="i-pulse" viewBox="0 0 24 24"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/><path d="M3.22 12H9.5l.5-1 2 4.5 2-7 1.5 3.5h5.27"/></symbol>
+      <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20M2 12h20"/></symbol>
+      <symbol id="i-shield" viewBox="0 0 24 24"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/></symbol>
+      <symbol id="i-card" viewBox="0 0 24 24"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></symbol>
+      <symbol id="i-target" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></symbol>
+      <symbol id="i-dollar" viewBox="0 0 24 24"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></symbol>
+      <symbol id="i-cal" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></symbol>
+      <symbol id="i-building" viewBox="0 0 24 24"><rect x="4" y="2" width="16" height="20" rx="2"/><path d="M9 22v-4h6v4M8 6h.01M16 6h.01M12 6h.01M12 10h.01M12 14h.01M16 10h.01M16 14h.01M8 10h.01M8 14h.01"/></symbol>
+      <symbol id="i-fb" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></symbol>
+      <symbol id="i-ig" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37zM17.5 6.5h.01"/></symbol>
+      <symbol id="i-in" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></symbol>
+      <symbol id="i-yt" viewBox="0 0 24 24"><path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"/><path d="m10 15 5-3-5-3z"/></symbol>
+      <symbol id="i-x" viewBox="0 0 24 24"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></symbol>
+    </svg>
+
+    <!-- UTILITY BAR -->
+    <div class="topbar">
+      <div class="topbar__inner">
+        <div class="topbar__group">
+          <span class="topbar__item topbar__greet">Welcome to Badr Medical Group</span>
+          <a class="topbar__item" href="#"><svg class="icon"><use href="#i-phone" /></svg><span dir="ltr">+96650 066 8123</span></a>
+          <a class="topbar__item topbar__email" href="#"><svg class="icon"><use href="#i-mail" /></svg>info@badrhealth.com</a>
+        </div>
+        <div class="topbar__group">
+          <a class="topbar__item topbar__branch" href="#"><svg class="icon"><use href="#i-pin" /></svg>Nearest Branch<svg class="icon"><use href="#i-chev" /></svg></a>
+          <div class="topbar__social">
+            <a href="#" aria-label="Facebook"><svg class="icon"><use href="#i-fb" /></svg></a>
+            <a href="#" aria-label="Instagram"><svg class="icon"><use href="#i-ig" /></svg></a>
+            <a href="#" aria-label="LinkedIn"><svg class="icon"><use href="#i-in" /></svg></a>
+            <a href="#" aria-label="YouTube"><svg class="icon"><use href="#i-yt" /></svg></a>
+            <a href="#" aria-label="Twitter"><svg class="icon"><use href="#i-x" /></svg></a>
+          </div>
+          <img class="topbar__vision" src="img/vision2030.png" alt="Saudi Vision 2030" />
+        </div>
+      </div>
+    </div>
+
+    <!-- HEADER -->
+    <header class="header">
+      <div class="header__inner">
+        <a class="header__logo" href="#">
+          <img src="badr-logo.png" alt="Badr Medical Group" />
+        </a>
+        <nav class="nav" aria-label="Main">
+          <a class="nav__link" href="#">Home</a>
+          <a class="nav__link" href="#">About</a>
+          <a class="nav__link" href="#">Services</a>
+          <a class="nav__link" href="#">Doctors</a>
+          <a class="nav__link" href="#">Branches</a>
+        </nav>
+        <a class="header__bric" href="#"><img src="img/bric-logo.png" alt="BRIC - Badr Remote Industrial Clinic" /></a>
+        <div class="header__actions">
+          <a class="pill pill--solid" href="#">Contact</a>
+          <a class="pill pill--outline header__lang" href="#">English</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero__inner">
+        <div class="hero__content">
+          <span class="hero__eyebrow">AI Patient Support · 24/7</span>
+          <h1 class="hero__heading">How can we help you today?</h1>
+          <p class="hero__sub">Your Trusted Healthcare Partner in Saudi Arabia</p>
+          <p class="hero__copy">
+            Speak with our AI assistant instantly about appointments, our
+            services, doctors, branches and insurance.
+          </p>
+          <div class="hero__actions">
+            <button id="call-btn" class="btn btn--primary">
+              <span class="btn__icon">📞</span>
+              <span id="call-btn-label">Click to Call</span>
+            </button>
+          </div>
+          <div class="status-pill">
+            <span class="status-pill__dot" id="status-dot"></span>
+            <span id="status-label">Ready to connect</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURE CARDS -->
+    <section class="features">
+      <div class="shell">
+        <div class="features__grid">
+          <article class="feature feature--teal">
+            <span class="feature__icon"><svg class="icon"><use href="#i-steth" /></svg></span>
+            <h3>Expert Specialists</h3>
+            <p>Our team of experienced doctors provides specialized care in various medical fields.</p>
+            <a class="feature__link" href="#">View All Services</a>
+          </article>
+          <article class="feature">
+            <span class="feature__icon"><svg class="icon"><use href="#i-users" /></svg></span>
+            <h3>Our Services</h3>
+            <p>We offer a comprehensive range of medical services delivered by our team of experienced healthcare professionals.</p>
+            <a class="feature__link" href="#">View All Services</a>
+          </article>
+          <article class="feature feature--teal">
+            <span class="feature__icon"><svg class="icon"><use href="#i-award" /></svg></span>
+            <h3>Our Doctors</h3>
+            <p>Meet our team of experienced and dedicated healthcare professionals.</p>
+            <a class="feature__link" href="#">View All Doctors</a>
+          </article>
+          <article class="feature">
+            <span class="feature__icon"><svg class="icon"><use href="#i-pin" /></svg></span>
+            <h3>Our Branches</h3>
+            <p>Visit any of our branches conveniently located to serve you with the same high standard of care.</p>
+            <a class="feature__link" href="#">Find Our Locations</a>
+          </article>
+        </div>
+
+        <a class="callcard" href="#">
+          <span class="callcard__icon"><svg class="icon"><use href="#i-phone" /></svg></span>
+          <span>
+            <span class="callcard__ar" lang="ar" dir="rtl">شركة بدر الطبية</span><br />
+            <span class="callcard__label">Call us</span><br />
+            <span class="callcard__num">+96650 066 8123</span>
+          </span>
+        </a>
+      </div>
+    </section>
+
+    <!-- KHOBAR -->
+    <section class="section section--wash">
+      <div class="shell khobar">
+        <div>
+          <h2 class="khobar__title">YOUR TRUSTED CARE IS NOW IN KHOBAR!</h2>
+          <p class="khobar__body">
+            Redefining healthcare through excellence and compassion. Experience
+            world-class medical services at our newest branch in Al Khobar,
+            equipped with modern facilities and expert healthcare professionals.
+          </p>
+          <ul class="khobar__list">
+            <li>
+              <span class="icon-dot"><svg class="icon"><use href="#i-pin" /></svg></span>
+              <div><h3>Location</h3><p>Opp. Aramco Stadium, Rakah, Al Khobar</p></div>
+            </li>
+            <li>
+              <span class="icon-dot"><svg class="icon"><use href="#i-steth" /></svg></span>
+              <div><h3>Full-Service Medical Center</h3><p>Comprehensive healthcare for the entire family</p></div>
+            </li>
+            <li>
+              <span class="icon-dot"><svg class="icon"><use href="#i-users" /></svg></span>
+              <div><h3>Expert Medical Team</h3><p>Experienced healthcare professionals</p></div>
+            </li>
+          </ul>
+        </div>
+        <div class="khobar__media">
+          <img src="img/khobar-exterior.jpg" alt="Badr Medical Center Khobar" loading="lazy" />
+          <span class="khobar__badge">NOW OPEN</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- COMMITMENT -->
+    <section class="section section--page">
+      <div class="shell">
+        <div class="section-head">
+          <h2 class="section-title">Our Commitment to Excellence</h2>
+          <p class="section-intro">
+            Badr Medical Group stands as a beacon of healthcare excellence,
+            dedicated to transforming lives through comprehensive medical
+            services and unwavering commitment to patient care.
+          </p>
+        </div>
+        <div class="values">
+          <article class="value">
+            <div class="value__head"><span class="icon-dot"><svg class="icon"><use href="#i-heart" /></svg></span><h3>Exceptional Patient Care</h3></div>
+            <p>Dedicated to providing exceptional patient care and accessibility through healthcare centers, ensuring efficient, effective, and comprehensive treatment for all patients.</p>
+          </article>
+          <article class="value">
+            <div class="value__head"><span class="icon-dot"><svg class="icon"><use href="#i-users" /></svg></span><h3>Multicultural Excellence</h3></div>
+            <p>Multicultural professionals ensuring culturally sensitive and engaging care for our diverse patient community.</p>
+          </article>
+          <article class="value">
+            <div class="value__head"><span class="icon-dot"><svg class="icon"><use href="#i-globe" /></svg></span><h3>Annual Patient Service</h3></div>
+            <p>Serving 1.2 million+ patients annually with a focus on inclusivity and quality healthcare delivery.</p>
+          </article>
+          <article class="value">
+            <div class="value__head"><span class="icon-dot"><svg class="icon"><use href="#i-shield" /></svg></span><h3>Insurance Partnerships</h3></div>
+            <p>Strong partnerships with all leading insurance ensure timely, coordinated, and high-quality care for the insured patients.</p>
+          </article>
+          <article class="value">
+            <div class="value__head"><span class="icon-dot"><svg class="icon"><use href="#i-card" /></svg></span><h3>Flexible Payment Options</h3></div>
+            <p>Flexible payment options make quality healthcare accessible to the uninsured, ensuring no one is left behind.</p>
+          </article>
+          <article class="value">
+            <div class="value__head"><span class="icon-dot"><svg class="icon"><use href="#i-pulse" /></svg></span><h3>Community Engagement</h3></div>
+            <p>We engage with communities through awareness campaigns, free medical outreach and wellness programs.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY CHOOSE -->
+    <section class="section">
+      <div class="shell">
+        <div class="section-head">
+          <h2 class="section-title">Why Choose<br />Badr Medical Group?</h2>
+          <p class="section-intro">Discover the key advantages that make us your trusted healthcare partner</p>
+        </div>
+        <div class="whys">
+          <article class="why"><span class="icon-dot"><svg class="icon"><use href="#i-steth" /></svg></span><h3>Advanced Technology</h3><p>Equipped with multispeciality diagnostic and treatment equipment.</p></article>
+          <article class="why"><span class="icon-dot"><svg class="icon"><use href="#i-users" /></svg></span><h3>Cultural Competence</h3><p>Diverse team delivering culturally sensitive and inclusive care.</p></article>
+          <article class="why"><span class="icon-dot"><svg class="icon"><use href="#i-award" /></svg></span><h3>Expert Professionals</h3><p>Skilled professionals with proven clinical and operational expertise.</p></article>
+          <article class="why"><span class="icon-dot"><svg class="icon"><use href="#i-target" /></svg></span><h3>International Standards</h3><p>Committed to international standards of safety, efficiency, and excellence.</p></article>
+          <article class="why"><span class="icon-dot"><svg class="icon"><use href="#i-dollar" /></svg></span><h3>Cost-Effective Care</h3><p>Affordable healthcare solutions without compromising quality.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ACHIEVEMENTS -->
+    <section class="section section--page">
+      <div class="shell">
+        <h2 class="subhead">Our Achievements</h2>
+        <div class="stats">
+          <div class="stat"><span class="icon-dot"><svg class="icon"><use href="#i-cal" /></svg></span><p class="stat__num">29+</p><p class="stat__label">Years of Experience</p></div>
+          <div class="stat"><span class="icon-dot"><svg class="icon"><use href="#i-building" /></svg></span><p class="stat__num">4</p><p class="stat__label">Medical Centres</p></div>
+          <div class="stat"><span class="icon-dot"><svg class="icon"><use href="#i-steth" /></svg></span><p class="stat__num">10+</p><p class="stat__label">Specialized Departments</p></div>
+          <div class="stat"><span class="icon-dot"><svg class="icon"><use href="#i-users" /></svg></span><p class="stat__num">119</p><p class="stat__label">Medical Professionals</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MEDICAL CENTERS -->
+    <section class="section">
+      <div class="shell">
+        <div class="section-head">
+          <h2 class="section-title">Our Medical Centers</h2>
+          <p class="section-intro">
+            Discover our state-of-the-art facilities across the Eastern
+            Province, equipped with modern technology and dedicated healthcare
+            professionals
+          </p>
+        </div>
+        <div class="centers">
+          <article class="center"><img src="img/dammam-exterior.jpg" alt="" loading="lazy" /><div class="center__body"><h3>Badr Medical Center Dammam</h3><p>Main Facility</p></div></article>
+          <article class="center"><img src="img/qatif-exterior.jpg" alt="" loading="lazy" /><div class="center__body"><h3>Badr Medical Center Qatif</h3><p>Premium Healthcare Facility</p></div></article>
+          <article class="center"><img src="img/jubail-exterior.jpg" alt="" loading="lazy" /><div class="center__body"><h3>Badr Medical Center Jubail</h3><p>Premium Healthcare Facility</p></div></article>
+          <article class="center"><img src="img/khobar-exterior.jpg" alt="" loading="lazy" /><div class="center__body"><h3>Badr Medical Center Khobar</h3><p>Now Open</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer__inner">
+        <div>
+          <a class="footer__logo" href="#"><img src="badr-logo.png" alt="Badr Medical Group" /></a>
+          <p class="footer__lead">
+            Providing exceptional healthcare services with compassion and
+            expertise across our branches.
+          </p>
+          <h4>Connect With Us</h4>
+          <div class="footer__social">
+            <a href="#" aria-label="Facebook"><svg class="icon"><use href="#i-fb" /></svg></a>
+            <a href="#" aria-label="Instagram"><svg class="icon"><use href="#i-ig" /></svg></a>
+            <a href="#" aria-label="LinkedIn"><svg class="icon"><use href="#i-in" /></svg></a>
+            <a href="#" aria-label="YouTube"><svg class="icon"><use href="#i-yt" /></svg></a>
+            <a href="#" aria-label="Twitter"><svg class="icon"><use href="#i-x" /></svg></a>
+          </div>
+        </div>
+        <div class="footer__contact">
+          <h3>Contact Us</h3>
+          <p class="footer__ar" lang="ar" dir="rtl">شركة بدر الطبية<br />الدمام، الربيع، الثاني،32241</p>
+          <div class="footer__rows">
+            <div class="footer__row"><span class="icon-dot"><svg class="icon"><use href="#i-mail" /></svg></span><div><small>Email</small><span>info@badrhealth.com</span></div></div>
+            <div class="footer__row"><span class="icon-dot"><svg class="icon"><use href="#i-phone" /></svg></span><div><small>Toll Free</small><span>920007139</span></div></div>
+          </div>
+          <p class="footer__note">
+            Your trusted healthcare partner in Saudi Arabia since 1997,
+            providing quality medical services with compassion and expertise.
+          </p>
+        </div>
+      </div>
+      <div class="footer__bar">© 2026 Badr Medical Group | All Rights Reserved</div>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
